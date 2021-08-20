@@ -4,6 +4,12 @@
 
 A simple primality test in Scala, using 6k +- 1 optimization.
 
+## Learn more
+
+This piece of code is described in this
+[DEV.TO](https://dev.to/guildenstern70/a-pure-functional-primality-test-in-scala-3gif)
+article.
+
 ## Build with SBT
 
 1. Install 'sbt' from here: http://www.scala-sbt.org/download.html

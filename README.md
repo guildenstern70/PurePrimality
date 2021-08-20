@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A collection of simple source code examples in Scala 3, featuring key aspects of the language.
+A simple primality test in Scala, using 6k +- 1 optimization.
 
 ## Build with SBT
 

@@ -6,8 +6,6 @@ object Main
 {
     final val VERSION = "v.0.1.0"
 
-    val _inc6: (Int) => Int = (n) => n + 6
-
     /**
      * Pure function to test primality. Uses recursion.
      *
@@ -15,7 +13,7 @@ object Main
      * @param i Seed initializer needed for recursion
      * @return True if the number is prime
      */
-    def isPrime(n: Int, i: Int = 5): Boolean =
+    def isPrime(n: Int)(implicit i: Int = 5): Boolean =
     {
         if (n <= 3)
             return n > 1
@@ -25,7 +23,7 @@ object Main
         {
             if (n % i == 0 || n % (i + 2) == 0)
                 return false
-            return isPrime(n, _inc6(i))
+            return isPrime(n)(i + 6)
         }
         true
     }
@@ -33,6 +31,7 @@ object Main
     def main(args: Array[String]): Unit =
     {
         println(s"Prime Checker $VERSION")
+        println("Is 7669 prime? " + isPrime(7669))
         println("Is 12209 prime? " + isPrime(12209))
         println("Is 17471 prime? " + isPrime(17471))
     }

@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A simple primality test in Scala, using 6k +- 1 optimization.
+A simple primality test in Scala, using 6k <pre><code>&#177;</pre></code> 1 optimization.
 
 ## Learn more
 

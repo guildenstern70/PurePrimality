@@ -4,7 +4,7 @@
 
 object Main
 {
-    final val VERSION = "v.0.1.0"
+    final val VERSION = "v.0.1.1"
 
     /**
      * Pure function to test primality. Uses recursion.
@@ -19,7 +19,7 @@ object Main
             return n > 1
         if (n % 2 == 0 || n % 3 == 0)
             return false
-        while (scala.math.pow(i, 2) <= n)
+        while (i * i <= n)
         {
             if (n % i == 0 || n % (i + 2) == 0)
                 return false
